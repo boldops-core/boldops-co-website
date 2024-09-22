@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', Tahoma, sans-serif; /* Fallback to Arial if Helvetica isn't available */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full height to center text vertically */
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center; /* Center align text */
+    padding: 50px 0; /* Increased padding for emphasis */
+    width: 100%; /* Full width for header */
+}
+
+.company-name {
+    font-size: 48px; /* Larger font size for the company name */
+    font-weight: bold; /* Make the company name bold */
+    margin: 0; /* Remove default margin */
+}
+
+.status {
+    font-size: 24px; /* Slightly smaller font size for status */
+    font-weight: normal; /* Normal weight for status */
+    margin: 0; /* Remove default margin */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
