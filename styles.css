@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Helvetica', Tahoma, sans-serif; /* Fallback to Arial if Helvetica isn't available */
+    font-weight: bold;
     margin: 0;
     padding: 0;
     display: flex;
