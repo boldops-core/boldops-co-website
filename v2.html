@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoldOps</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Material+Icons&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #0F1219;
+            background-color: white;
+        }
+        .header {
+            background-color: #2E67F8;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .header h1 span.bold {
+            font-weight: bold;
+        }
+        .header h1 span.regular {
+            font-weight: normal;
+        }
+        .header nav {
+            display: flex;
+            gap: 10px;
+        }
+        .header nav a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-weight: normal;
+            gap: 5px;
+        }
+        .header nav a .material-icons {
+            font-size: 18px;
+        }
+        .header nav a:hover {
+            color: #FFD700;
+        }
+        .header nav a:not(:last-child)::after {
+            content: "|";
+            color: white;
+            margin-left: 10px;
+        }
+        .line {
+            height: 4px;
+            background-color: #FFD700;
+            margin-top: -4px;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .category {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+            padding: 10px;
+            border-radius: 8px;
+            gap: 10px;
+        }
+        .category:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+        .category .material-icons {
+            font-size: 24px;
+            color: #2E67F8;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>
+            <span class="bold">Bold</span><span class="regular">Ops</span>
+        </h1>
+        <nav>
+            <a href="#what-we-do"><span class="material-icons">work</span>What We Do</a>
+            <a href="#approaches"><span class="material-icons">engineering</span>Approaches</a>
+            <a href="#case-studies"><span class="material-icons">assessment</span>Case Studies</a>
+            <a href="#careers"><span class="material-icons">person_search</span>Careers</a>
+            <a href="#tech-insights"><span class="material-icons">insights</span>Tech Insights</a>
+            <a href="#contacts"><span class="material-icons">contacts</span>Contacts</a>
+        </nav>
+    </header>
+    <div class="line"></div>
+
+    <section id="what-we-do" class="section">
+        <h2>What We Do</h2>
+        <div class="category"><span class="material-icons">cloud</span><strong>Cloud:</strong> Scalable cloud computing solutions</div>
+        <div class="category"><span class="material-icons">security</span><strong>Security:</strong> Comprehensive data protection</div>
+        <div class="category"><span class="material-icons">science</span><strong>MLOps:</strong> Automating machine learning operations</div>
+        <div class="category"><span class="material-icons">storage</span><strong>BigData:</strong> Advanced analytics and processing</div>
+        <div class="category"><span class="material-icons">code</span><strong>Software Engineering:</strong> Tailored development</div>
+    </section>
+
+    <section id="approaches" class="section">
+        <h2>Approaches</h2>
+        <div class="category"><span class="material-icons">manage_accounts</span><strong>Managed Delivery:</strong> End-to-end management</div>
+        <div class="category"><span class="material-icons">support</span><strong>Consultancy:</strong> IT strategy optimization</div>
+        <div class="category"><span class="material-icons">group_add</span><strong>Team Extension:</strong> Skilled professional support</div>
+        <div class="category"><span class="material-icons">auto_awesome</span><strong>Operational Excellence:</strong> Continuous improvement</div>
+    </section>
+
+    <section id="case-studies" class="section">
+        <h2>Case Studies</h2>
+        <div class="category"><span class="material-icons">cloud_done</span><strong>Cloud Migration:</strong> Successfully moved TechCorp’s infrastructure</div>
+        <div class="category"><span class="material-icons">shield</span><strong>Security Upgrade:</strong> Enhanced protection for FinBank</div>
+        <div class="category"><span class="material-icons">speed</span><strong>MLOps for Health:</strong> Automated systems for HealthData</div>
+    </section>
+
+    <section id="careers" class="section">
+        <h2>Careers</h2>
+        <div class="category"><span class="material-icons">work</span><strong>Join Us:</strong> Become part of a cutting-edge IT team</div>
+        <div class="category"><span class="material-icons">school</span><strong>Training:</strong> Programs to grow your expertise</div>
+    </section>
+
+    <section id="tech-insights" class="section">
+        <h2>Tech Insights</h2>
+        <div class="category"><span class="material-icons">insights</span><strong>Trends:</strong> Latest technology insights</div>
+        <div class="category"><span class="material-icons">analytics</span><strong>Analysis:</strong> In-depth case studies</div>
+    </section>
+
+    <footer id="contacts" class="footer">
+        <p>Address: Ukraine, Lviv, Svobody ave. 1 | <a href="tel:+380931234567">+380931234567</a></p>
+    </footer>
+</body>
+</html>
